@@ -5,11 +5,6 @@
 #
 
 ###############################################################################
-# Use HWE kernel packages
-#
-HWE=""
-
-###############################################################################
 # Update our machine to the latest code if we need to.
 #
 
@@ -34,7 +29,6 @@ fi
 apt install -y xrdp
 
 systemctl stop xrdp
-systemctl stop xrdp-sesman
 
 # Configure the installed XRDP ini files.
 # use vsock transport.
